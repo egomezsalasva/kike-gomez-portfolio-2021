@@ -220,7 +220,7 @@
 
                       <div className="workProject">
                           <a href="https://scrannyshouse.com/" target="_blank" rel="noreferrer">
-                              <div className="workProjectTitle">Scranny's House</div>
+                              <div className="workProjectTitle">Scranny&apos;s House</div>
                           </a>
                           <div className="workProjectText">Development &amp; Design</div>
                       </div>
@@ -272,7 +272,7 @@
 
                       <div className="workProject">
                           <a href="https://scrannyshouse.com/" target="_blank" rel="noreferrer">
-                              <div className="workProjectTitle">Scranny's House</div>
+                              <div className="workProjectTitle">Scranny&apos;s House</div>
                           </a>
                           <div className="workProjectText">Development &amp; Design</div>
                       </div>
