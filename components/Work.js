@@ -212,42 +212,42 @@
                   <div className="workListContainer" id="workList">
 
                       <div className="workProject">
-                          <a href="https://anuarkhalifi.com/" target="_blank">
+                          <a href="https://anuarkhalifi.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Anuar Khalifi</div>
                           </a>
                           <div className="workProjectText">Development & Design</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://scrannyshouse.com/" target="_blank">
+                          <a href="https://scrannyshouse.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Scranny's House</div>
                           </a>
                           <div className="workProjectText">Development & Design</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://www.ajuarestudio.com" target="_blank">
+                          <a href="https://www.ajuarestudio.com" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Ajuar</div>
                           </a>
                           <div className="workProjectText">Development</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://www.behance.net/gallery/78665785/Aaron-Dormer-Film-Director-Website" target="_blank">
+                          <a href="https://www.behance.net/gallery/78665785/Aaron-Dormer-Film-Director-Website" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Aaron Dormer</div>
                           </a>
                           <div className="workProjectText">Design</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://axelbalazsi.netlify.app/" target="_blank">
+                          <a href="https://axelbalazsi.netlify.app/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Axel Balazsi</div>
                           </a>
                           <div className="workProjectText">Development & Design</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://unikomodels.com/" target="_blank">
+                          <a href="https://unikomodels.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Uniko</div>
                           </a>
                           <div className="workProjectText">Development & Design</div>
@@ -264,42 +264,42 @@
                   <div className="workListContainer" id="workListMobile">
 
                       <div className="workProject">
-                          <a href="https://anuarkhalifi.com/" target="_blank">
+                          <a href="https://anuarkhalifi.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Anuar Khalifi</div>
                           </a>
                           <div className="workProjectText">Development & Design</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://scrannyshouse.com/" target="_blank">
+                          <a href="https://scrannyshouse.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Scranny's House</div>
                           </a>
                           <div className="workProjectText">Development & Design</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://www.ajuarestudio.com" target="_blank">
+                          <a href="https://www.ajuarestudio.com" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Ajuar</div>
                           </a>
                           <div className="workProjectText">Development</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://www.behance.net/gallery/78665785/Aaron-Dormer-Film-Director-Website" target="_blank">
+                          <a href="https://www.behance.net/gallery/78665785/Aaron-Dormer-Film-Director-Website" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Aaron Dormer</div>
                           </a>
                           <div className="workProjectText">Design</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://axelbalazsi.netlify.app/" target="_blank">
+                          <a href="https://axelbalazsi.netlify.app/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Axel Balazsi</div>
                           </a>
                           <div className="workProjectText">Development & Design</div>
                       </div>
 
                       <div className="workProject">
-                          <a href="https://unikomodels.com/" target="_blank">
+                          <a href="https://unikomodels.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Uniko</div>
                           </a>
                           <div className="workProjectText">Development & Design</div>
