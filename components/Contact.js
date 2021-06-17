@@ -178,7 +178,7 @@
                 clipTl
                     .to(clipRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
                     .to(clipConfirmRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
-            }, [])
+            }, [clipTl])
 
             const copyToClipboard = () => {
                 navigator.clipboard.writeText("egomezsalasva@gmail.com")
