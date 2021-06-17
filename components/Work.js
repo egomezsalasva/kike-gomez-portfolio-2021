@@ -215,14 +215,14 @@
                           <a href="https://anuarkhalifi.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Anuar Khalifi</div>
                           </a>
-                          <div className="workProjectText">Development & Design</div>
+                          <div className="workProjectText">Development &amp; Design</div>
                       </div>
 
                       <div className="workProject">
                           <a href="https://scrannyshouse.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Scranny's House</div>
                           </a>
-                          <div className="workProjectText">Development & Design</div>
+                          <div className="workProjectText">Development &amp; Design</div>
                       </div>
 
                       <div className="workProject">
@@ -243,14 +243,14 @@
                           <a href="https://axelbalazsi.netlify.app/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Axel Balazsi</div>
                           </a>
-                          <div className="workProjectText">Development & Design</div>
+                          <div className="workProjectText">Development &amp; Design</div>
                       </div>
 
                       <div className="workProject">
                           <a href="https://unikomodels.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Uniko</div>
                           </a>
-                          <div className="workProjectText">Development & Design</div>
+                          <div className="workProjectText">Development &amp; Design</div>
                       </div>
 
                   </div>
@@ -267,14 +267,14 @@
                           <a href="https://anuarkhalifi.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Anuar Khalifi</div>
                           </a>
-                          <div className="workProjectText">Development & Design</div>
+                          <div className="workProjectText">Development &amp; Design</div>
                       </div>
 
                       <div className="workProject">
                           <a href="https://scrannyshouse.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Scranny's House</div>
                           </a>
-                          <div className="workProjectText">Development & Design</div>
+                          <div className="workProjectText">Development &amp; Design</div>
                       </div>
 
                       <div className="workProject">
@@ -295,14 +295,14 @@
                           <a href="https://axelbalazsi.netlify.app/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Axel Balazsi</div>
                           </a>
-                          <div className="workProjectText">Development & Design</div>
+                          <div className="workProjectText">Development &amp; Design</div>
                       </div>
 
                       <div className="workProject">
                           <a href="https://unikomodels.com/" target="_blank" rel="noreferrer">
                               <div className="workProjectTitle">Uniko</div>
                           </a>
-                          <div className="workProjectText">Development & Design</div>
+                          <div className="workProjectText">Development &amp; Design</div>
                       </div>
 
                   </div>
