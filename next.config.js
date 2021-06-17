@@ -1,3 +1,7 @@
-module.exports = {
-  reactStrictMode: true,
-}
+const withPlugins = require('next-compose-plugins')
+const withImages = require('next-images')
+
+module.exports = withPlugins([withImages], {
+  target: 'serverless',
+  reactStrictMode: true
+})
