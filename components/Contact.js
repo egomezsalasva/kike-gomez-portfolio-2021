@@ -217,7 +217,7 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <img src="/copyClip.svg" alt="copy clipboard"/></div>
+                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <Image src="/copyClip.svg" alt="copy clipboard"/></div>
                                 <div className="clipConfirmed" ref={el => clipConfirmRef = el}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
