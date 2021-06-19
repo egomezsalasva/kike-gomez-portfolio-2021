@@ -1,7 +1,6 @@
 // IMPORTS
   //-Modules
   import { useRef, useEffect } from 'react'
-  import Image from 'next/image'
   import { gsap } from 'gsap'
   import styled from 'styled-components'
   //-Styles
@@ -55,7 +54,7 @@
                         text-align: right;
                         transform: translateY(0%);
 
-                        .imageClip{
+                        img{
                             transform: translateY(2px);
                             height: 15px;
                             padding-left: 2px;
@@ -135,7 +134,7 @@
                         font-size: 0.75rem;
                         line-height: 1;
 
-                        .imageClip{
+                        img{
                             height: 15px;
                             padding-left: 2px;
                             transform: translateY(3px) scale(0.75);
@@ -211,7 +210,7 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <Image className="imageClip" src="/copyClip.svg" height={15} width={13} alt="copy clipboard" /> </div>
+                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <img src="/copyClip.svg"  alt="copy clipboard" /> </div>
                                 <div className="clipConfirmed" ref={el => clipConfirmRef = el}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
@@ -230,7 +229,7 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipMobileTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipMobileRef = el}>Copy To Clipboard <Image className="imageClip" src="/copyClip.svg" height={15} width={13} alt="copy clipboard"/></div>    
+                                <div className="clip" ref={el => clipMobileRef = el}>Copy To Clipboard <img src="/copyClip.svg" alt="copy clipboard"/></div>    
                                 <div className="clipConfirmed" ref={el => clipConfirmMobileRef = el}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
