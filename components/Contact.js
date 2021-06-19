@@ -9,6 +9,7 @@
 //
 
 // STYLES
+
     const DesktopContent = styled.div`
         display: flex;
         justify-content: space-between;
@@ -53,7 +54,8 @@
                     .clip{
                         text-align: right;
                         transform: translateY(0%);
-                        img{
+
+                        .imageClip{
                             transform: translateY(2px);
                             height: 15px;
                             padding-left: 2px;
@@ -133,7 +135,7 @@
                         font-size: 0.75rem;
                         line-height: 1;
 
-                        img{
+                        .imageClip{
                             height: 15px;
                             padding-left: 2px;
                             transform: translateY(3px) scale(0.75);
@@ -164,17 +166,6 @@
         }
     `
 
-    const DesktopImage = styled(Image)`
-        transform: translateY(2px);
-        height: 15px;
-        padding-left: 2px;
-    `
-
-    const MobileImage = styled(Image)`
-        height: 15px;
-        padding-left: 2px;
-        transform: translateY(3px) scale(0.75);
-    `
 //
 
 //MAIN COMPONENT
@@ -191,6 +182,16 @@
                     .to(clipRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
                     .to(clipConfirmRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
             }, [clipTl])
+
+            const clipMobileTl = gsap.timeline({paused: true})
+            let clipMobileRef = useRef()
+            let clipConfirmMobileRef = useRef()
+            
+            useEffect(() => {
+                clipMobileTl
+                    .to(clipMobileRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
+                    .to(clipConfirmMobileRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
+            }, [clipMobileTl])
 
             const copyToClipboard = () => {
                 navigator.clipboard.writeText("egomezsalasva@gmail.com")
@@ -210,7 +211,7 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <DesktopImage src="/copyClip.svg" layout="fill" alt="copy clipboard"/></div>
+                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <Image className="imageClip" src="/copyClip.svg" height={15} width={13} alt="copy clipboard" /> </div>
                                 <div className="clipConfirmed" ref={el => clipConfirmRef = el}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
@@ -227,10 +228,10 @@
 
                 
                     <div className="emailContainer">
-                        <div className="wrapper" onClick={() => { clipTl.play(); copyToClipboard()} }>
+                        <div className="wrapper" onClick={() => { clipMobileTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <MobileImage src="/copyClip.svg" layout="fill" alt="copy clipboard"/></div>
-                                <div className="clipConfirmed" ref={el => clipConfirmRef = el}>Copied To Clipboard!</div>
+                                <div className="clip" ref={el => clipMobileRef = el}>Copy To Clipboard <Image className="imageClip" src="/copyClip.svg" height={15} width={13} alt="copy clipboard"/></div>    
+                                <div className="clipConfirmed" ref={el => clipConfirmMobileRef = el}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
                         </div>
