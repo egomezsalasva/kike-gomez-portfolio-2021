@@ -163,6 +163,18 @@
             }
         }
     `
+
+    const DesktopImage = styled(Image)`
+        transform: translateY(2px);
+        height: 15px;
+        padding-left: 2px;
+    `
+
+    const MobileImage = styled(Image)`
+        height: 15px;
+        padding-left: 2px;
+        transform: translateY(3px) scale(0.75);
+    `
 //
 
 //MAIN COMPONENT
@@ -198,7 +210,7 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <Image src="/copyClip.svg" alt="copy clipboard"/></div>
+                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <DesktopImage src="/copyClip.svg" layout="fill" alt="copy clipboard"/></div>
                                 <div className="clipConfirmed" ref={el => clipConfirmRef = el}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
@@ -217,7 +229,7 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <Image src="/copyClip.svg" alt="copy clipboard"/></div>
+                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <MobileImage src="/copyClip.svg" layout="fill" alt="copy clipboard"/></div>
                                 <div className="clipConfirmed" ref={el => clipConfirmRef = el}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
