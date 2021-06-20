@@ -42,7 +42,8 @@
             overflow: hidden;
 
             .nameInner{
-                font-family: ${brandingFonts.displayRegular};
+                //font-family: ${brandingFonts.displayRegular};
+                font-family: "MAZIUS REVIEW 20.09";
                 text-transform: uppercase;
                 font-size: 22rem;
                 color: ${brandingColors.dark};
@@ -73,7 +74,8 @@
         overflow: hidden;
 
             .surnameInner{
-                font-family: ${brandingFonts.displayExtraItalic};
+                //font-family: ${brandingFonts.displayExtraItalic};
+                font-family: 'MAZIUS REVIEW 20.09 Ex';
                 transform: translateY(-5rem);
                 text-transform: uppercase;
                 font-size: 22rem;
@@ -117,7 +119,8 @@
             overflow: hidden;
 
             .nameInner{
-                font-family: ${brandingFonts.displayRegular};
+                //font-family: ${brandingFonts.displayRegular};
+                font-family: "MAZIUS REVIEW 20.09";
                 text-transform: uppercase;
                 font-size: 24vw;
                 color: ${brandingColors.dark};
@@ -133,7 +136,8 @@
         overflow: hidden;
 
             .surnameInner{
-                font-family: ${brandingFonts.displayExtraItalic};
+                //font-family: ${brandingFonts.displayExtraItalic};
+                font-family: 'MAZIUS REVIEW 20.09 Ex';
                 transform: translateY(-2vw);
                 text-transform: uppercase;
                 font-size: 24vw;
