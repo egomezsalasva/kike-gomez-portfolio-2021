@@ -1,6 +1,6 @@
 const brandingFonts = {
-    displayRegular: "'MAZIUSREVIEW20.09-Regular'",
-    displayExtraItalic: "'MAZIUSREVIEW20.09-Extraitalic'",
+    displayRegular: "'MAZIUS REVIEW 20.09'",
+    displayExtraItalic: "'MAZIUS REVIEW 20.09 Ex'",
     
     textRegular: "'Graphik-Regular'",
     textMedium: "'Graphik-Medium'",
