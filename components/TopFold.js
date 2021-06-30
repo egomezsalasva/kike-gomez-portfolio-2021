@@ -16,7 +16,9 @@
         transform: rotate(-90deg) translate(50px, 35px);
         text-transform: uppercase;
         //font-family: ${brandingFonts.textRegular};
-        font-family: 'Graphik';
+        font-family: "Graphik";
+        font-weight: normal;
+        font-style: normal;
         font-size: 0.75rem;
         color: ${brandingColors.dark};
         letter-spacing: 0;
@@ -55,7 +57,9 @@
 
         .description{
             //font-family: ${brandingFonts.textRegular};
-            font-family: 'Graphik';
+            font-family: "Graphik";
+            font-weight: normal;
+            font-style: normal;
             font-size: 1rem;
             color: ${brandingColors.dark};
             letter-spacing: 0.01em;
@@ -65,8 +69,9 @@
 
             span{
                 //font-family: ${brandingFonts.textSemibold};
-                font-family: 'Graphik';
+                font-family: "Graphik";
                 font-weight: 600;
+                font-style: normal;
             }
         }
     }
@@ -98,7 +103,10 @@
 
 
     .description{
-        font-family: ${brandingFonts.textRegular};
+        //font-family: ${brandingFonts.textRegular};
+        font-family: "Graphik";
+        font-weight: normal;
+        font-style: normal;
         font-size: 1rem;
         color: ${brandingColors.dark};
         letter-spacing: 0.01em;
@@ -110,7 +118,10 @@
         right: 30px;
 
         span{
-            font-family: ${brandingFonts.textSemibold};
+            //font-family: ${brandingFonts.textSemibold};
+            font-family: "Graphik";
+            font-weight: 600;
+            font-style: normal;
         }
     }
 
