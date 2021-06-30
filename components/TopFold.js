@@ -170,7 +170,7 @@
 //MAIN COMPONENT
     export default function TopFold({nameRefProp, descriptionRefProp, surnameRefProp, nameMobileRefProp, descriptionMobileRefProp, surnameMobileRefProp}) {
 
-    //TODO BUG ANIMATION
+    //BUG ANIMATION?
     
     return (
         <StyleContainer>        

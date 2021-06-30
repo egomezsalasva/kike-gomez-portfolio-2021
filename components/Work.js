@@ -120,7 +120,6 @@
         //font-family: ${brandingFonts.textMedium};
         font-family: "Graphik";
         font-weight: 500;
-        font-weight: normal;
         font-size: 2rem;
         color: ${brandingColors.dark};
         letter-spacing: 0;
@@ -185,6 +184,14 @@
 
 //MAIN COMPONENT
     export default function Work() {
+
+        //BUG ANIMATION JUMPY WITH CHROME BAR
+
+        //TODO:REFACTOR EXPAND WIDTH OF THE PROJECT TITLES (MAKE WORK TITLE SMALLER)
+
+        //TODO:FUTURE-FEATURES WORK LIST MOTION
+
+        //TODO:REFACTOR MAKE A COMPONENT FOR LIST ITEMS
 
         //SCROLL FOLLOW
 

@@ -182,6 +182,8 @@
 //MAIN COMPONENT
     export default function Contact({}) {
 
+        //TODO:REFACTOR RENDER IMAGE POROPERLY
+
         //COPY TO CLIPBOARD
 
             const clipTl = gsap.timeline({paused: true})
