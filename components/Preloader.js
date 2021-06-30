@@ -30,8 +30,9 @@
             position: absolute;
             top: 48px;
             left: 48px;
-            font-family: ${brandingFonts.textMedium}; 
-            font-weight: normal;
+            //font-family: ${brandingFonts.textMedium};
+            font-family: "Graphik";
+            font-weight: 500;
             font-size: 2rem;
             color: ${brandingColors.light};
             letter-spacing: 0;
@@ -65,8 +66,9 @@
             position: absolute;
             bottom: 48px;
             right: 48px;
-            font-family: ${brandingFonts.textMedium}; 
-            font-weight: normal;
+            //font-family: ${brandingFonts.textMedium};
+            font-family: "Graphik";
+            font-weight: 500;
             font-size: 2rem;
             color: ${brandingColors.light};
             letter-spacing: 0;

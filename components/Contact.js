@@ -29,8 +29,9 @@
                 left: 0;
                 transform: rotate(-90deg) translateX(-100%);
                 transform-origin: top left;
-                font-family: ${brandingFonts.textMedium};
-                font-weight: normal;
+                //font-family: ${brandingFonts.textMedium};
+                font-family: "Graphik";
+                font-weight: 500;
                 font-size: 5rem;
                 color: ${brandingColors.dark};
                 letter-spacing: 0;
@@ -70,13 +71,17 @@
                 }
 
                 .email{
-                    font-family: ${brandingFonts.displayRegular};
+                    //font-family: ${brandingFonts.displayRegular};
+                    font-family: "MAZIUS REVIEW 20.09";
+                    font-weight: normal;
+                    font-style: normal;
                     font-size: 5rem;
                     color: ${brandingColors.dark};
                     letter-spacing: 0;
                     line-height: 112px;
                     span{
                         font-family: ${brandingFonts.textRegular};
+                        font-family: "Graphik";
                         font-size: 4.5rem;
                     }
                 }
@@ -106,8 +111,9 @@
                 left: 0;
                 transform: rotate(-90deg) translateX(-153.28px);
                 transform-origin: top left;
-                font-family: ${brandingFonts.textMedium};
-                font-weight: normal;
+                //font-family: ${brandingFonts.textMedium};
+                font-family: "Graphik";
+                font-weight: 500;
                 font-size: 2rem;
                 color: ${brandingColors.dark};
                 letter-spacing: 0;
@@ -152,14 +158,18 @@
                 }
 
                 .email{
-                    font-family: ${brandingFonts.displayRegular};
+                    //font-family: ${brandingFonts.displayRegular};
+                    font-family: "MAZIUS REVIEW 20.09";
+                    font-weight: normal;
+                    font-style: normal;
                     font-size: 1.5rem;
                     color: ${brandingColors.dark};
                     letter-spacing: 0;
                     line-height: 1;
 
                     span{
-                        font-family: ${brandingFonts.textRegular};
+                        //font-family: ${brandingFonts.textRegular};
+                        font-family: "Graphik";
                         font-size: 1.5rem;
                     }
                 }

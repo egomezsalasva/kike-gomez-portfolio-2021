@@ -29,8 +29,9 @@
         left: 0;
         transform: rotate(-90deg) translateX(-100%);
         transform-origin: top left;
-        font-family: ${brandingFonts.textMedium};
-        font-weight: normal;
+        //font-family: ${brandingFonts.textMedium};
+        font-family: "Graphik";
+        font-weight: 500;
         font-size: 5rem;
         color: ${brandingColors.dark};
         letter-spacing: 0;
@@ -50,7 +51,10 @@
         .workProjectTitle{
           display: inline-block;
           margin: 0;
-          font-family: ${brandingFonts.displayRegular};
+          //font-family: ${brandingFonts.displayRegular};
+          font-family: "MAZIUS REVIEW 20.09";
+          font-weight: normal;
+          font-style: normal;
           font-size: 5rem;
           color: ${brandingColors.dark};
           letter-spacing: 0;
@@ -60,7 +64,10 @@
           height: 112px;
           cursor: pointer;
           &:hover{
-            font-family: ${brandingFonts.displayExtraItalic};
+            //font-family: ${brandingFonts.displayExtraItalic};
+            font-family: 'MAZIUS REVIEW 20.09 Ex';
+            font-weight: normal;
+            font-style: italic;
           }
           &:hover::before{
             content: '';
@@ -77,6 +84,9 @@
         }
         .workProjectText{
           font-family: ${brandingFonts.textRegular};
+          font-family: "Graphik";
+          font-weight: normal;
+          font-style: normal;
           font-size: 1rem;
           color: ${brandingColors.dark};
           letter-spacing: 0;
@@ -107,7 +117,9 @@
         left: 0;
         transform: rotate(-90deg) translateX(-100%);
         transform-origin: top left;
-        font-family: ${brandingFonts.textMedium};
+        //font-family: ${brandingFonts.textMedium};
+        font-family: "Graphik";
+        font-weight: 500;
         font-weight: normal;
         font-size: 2rem;
         color: ${brandingColors.dark};
@@ -132,7 +144,10 @@
         .workProjectTitle{
           display: inline-block;
           margin: 0;
-          font-family: ${brandingFonts.displayRegular};
+          //font-family: ${brandingFonts.displayRegular};
+          font-family: "MAZIUS REVIEW 20.09";
+          font-weight: normal;
+          font-style: normal;
           font-size: 2.5rem;
           color: ${brandingColors.dark};
           letter-spacing: 0;
@@ -142,11 +157,17 @@
 
           &:hover{
             font-family: ${brandingFonts.displayExtraItalic};
+            font-family: 'MAZIUS REVIEW 20.09 Ex';
+            font-weight: normal;
+            font-style: italic;
           }
         }
 
         .workProjectText{
-          font-family: ${brandingFonts.textRegular};
+          //font-family: ${brandingFonts.textRegular};
+          font-family: "Graphik";
+          font-weight: normal;
+          font-style: normal;
           font-size: 0.75rem;
           color: ${brandingColors.dark};
           letter-spacing: 0;
