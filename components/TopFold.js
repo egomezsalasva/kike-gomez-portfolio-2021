@@ -15,7 +15,8 @@
         bottom: 40px;
         transform: rotate(-90deg) translate(50px, 35px);
         text-transform: uppercase;
-        font-family: ${brandingFonts.textRegular};
+        //font-family: ${brandingFonts.textRegular};
+        font-family: 'Graphik';
         font-size: 0.75rem;
         color: ${brandingColors.dark};
         letter-spacing: 0;
@@ -53,7 +54,8 @@
         }
 
         .description{
-            font-family: ${brandingFonts.textRegular};
+            //font-family: ${brandingFonts.textRegular};
+            font-family: 'Graphik';
             font-size: 1rem;
             color: ${brandingColors.dark};
             letter-spacing: 0.01em;
@@ -62,7 +64,9 @@
             transform: translateY(-5px);
 
             span{
-                font-family: ${brandingFonts.textSemibold};
+                //font-family: ${brandingFonts.textSemibold};
+                font-family: 'Graphik';
+                font-weight: 600;
             }
         }
     }
@@ -75,7 +79,8 @@
 
             .surnameInner{
                 //font-family: ${brandingFonts.displayExtraItalic};
-                font-family: 'MAZIUS REVIEW 20.09 Ex';
+                font-family: "MAZIUS REVIEW 20.09 Ex";
+                font-style: italic;
                 transform: translateY(-5rem);
                 text-transform: uppercase;
                 font-size: 22rem;
@@ -137,7 +142,8 @@
 
             .surnameInner{
                 //font-family: ${brandingFonts.displayExtraItalic};
-                font-family: 'MAZIUS REVIEW 20.09 Ex';
+                font-family: "MAZIUS REVIEW 20.09 Ex";
+                font-style: italic;
                 transform: translateY(-2vw);
                 text-transform: uppercase;
                 font-size: 24vw;
