@@ -1,12 +1,12 @@
 // IMPORTS
   //-Modules
   import { useRef, useEffect } from 'react'
-  import Image from 'next/image'
+  //import Image from 'next/image'
   import { gsap } from 'gsap'
   import styled from 'styled-components'
   //-Styles
   import { brandingColors, brandingFonts, breakingPoints } from '../styles/customStyles'
-  import copyClipImg from '../public/copyClip.svg'
+  //import copyClipImg from '../public/copyClip.svg'
 //
 
 // STYLES
@@ -82,8 +82,9 @@
                     letter-spacing: 0;
                     line-height: 112px;
                     span{
-                        font-family: ${brandingFonts.textRegular};
+                        //font-family: ${brandingFonts.textRegular};
                         font-family: "Graphik";
+                        font-weight: normal;
                         font-size: 4.5rem;
                     }
                 }
@@ -174,6 +175,7 @@
                     span{
                         //font-family: ${brandingFonts.textRegular};
                         font-family: "Graphik";
+                        font-weight: normal;
                         font-size: 1.5rem;
                     }
                 }
@@ -213,7 +215,7 @@
                     .to(clipMobileRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
                     .to(clipConfirmMobileRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
             }, [clipMobileTl])
-            
+
         //
 
         //COPY TO CLIPBOARD
@@ -234,7 +236,9 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard <Image className="imgClip" src={copyClipImg} height={15} width={13} alt="copy clipboard" /> </div>
+                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard 
+                                    {/* <Image className="imgClip" src={copyClipImg} height={15} width={13} alt="copy clipboard" />  */}
+                                </div>
                                 <div className="clipConfirmed" ref={el => clipConfirmRef = el}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
@@ -253,7 +257,9 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipMobileTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipMobileRef = el}>Copy To Clipboard <Image className="imgClip" src={copyClipImg} height={15} width={13} alt="copy clipboard"/></div>    
+                                <div className="clip" ref={el => clipMobileRef = el}>Copy To Clipboard 
+                                    {/* <Image className="imgClip" src={copyClipImg} height={15} width={13} alt="copy clipboard"/> */}
+                                </div>    
                                 <div className="clipConfirmed" ref={el => clipConfirmMobileRef = el}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>

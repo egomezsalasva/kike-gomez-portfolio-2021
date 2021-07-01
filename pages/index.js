@@ -46,8 +46,6 @@
 
     //TODO UNIT TEST
 
-    //TODO ON REFRESH TOP TO THE PAGE
-
     //TODO RESPOSNIVE TABLET
 
     //BUG CHROME BOTTOM BAR PINNING BEHAVIOUR
@@ -81,10 +79,10 @@
         //Variables
         const initialLoadSecs = 3
 
-        //Intro Timeline Desk
+        //Intro Timeline
           introTl
                 //Preloader
-                //.to("body", {duration:0, overflow: "hidden"}, "start")
+                .to("body", {duration:0, overflow: "hidden"}, "start")
                 .to(introTopLoadingBarRef, {duration:initialLoadSecs, width: "100vw", ease: "power2.inOut"}, "start")
                 .to(introBottomLoadingBarRef, {duration:initialLoadSecs, width: "100vw", ease: "power2.inOut"}, "start")
                 .to(introTopBlockRef, {duration:2, yPercent: -100, ease: "power2.inOut"}, "stage02")
@@ -101,7 +99,7 @@
                 .from(surnameMobileRef, {duration:2, y: "28rem", alpha: 0, rotate: 5.625, ease: "power2.inOut"}, "stage04-=2")
                 .from(descriptionMobileRef, {duration:2, alpha: 0, ease: "power2.inOut"}, "stage04-=0.5")
                 .from(themeButtonRef, {duration:2, scale: 0, ease: "power2.inOut"}, "stage04")
-                .to("body", {duration:0, overflow: "visible"}, "stage05-=1")
+                .to("body", {duration:0, overflow: "visible"}, "stage05-=1.5")
 
                 .play()
         //
@@ -112,6 +110,12 @@
 
     //CONTEXT COLOR THEME
       const {themeMode, toggleThemeHandler} = useThemeContext()
+    //
+
+    //SCROLL TO TOP ON PAGE REFRESH
+      useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+      }, []);
     //
 
 
