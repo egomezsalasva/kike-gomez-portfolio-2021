@@ -154,12 +154,12 @@
           height: 40px;
           cursor: pointer;
 
-          &:hover{
+          /* &:hover{
             font-family: ${brandingFonts.displayExtraItalic};
             font-family: 'MAZIUS REVIEW 20.09 Ex';
             font-weight: normal;
             font-style: italic;
-          }
+          } */
         }
 
         .workProjectText{
