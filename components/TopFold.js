@@ -20,7 +20,7 @@
         font-weight: normal;
         font-style: normal;
         font-size: 0.75rem;
-        color: ${brandingColors.dark};
+        color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
         letter-spacing: 0;
         @media (max-width: ${breakingPoints.mobile}) {
             right: 24px;
@@ -49,7 +49,7 @@
                 font-family: "MAZIUS REVIEW 20.09";
                 text-transform: uppercase;
                 font-size: 22rem;
-                color: ${brandingColors.dark};
+                color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                 letter-spacing: 0;
                 line-height: 16rem;
             }
@@ -61,7 +61,7 @@
             font-weight: normal;
             font-style: normal;
             font-size: 1rem;
-            color: ${brandingColors.dark};
+            color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
             letter-spacing: 0.01em;
             text-align: right;
             line-height: 1.5rem;
@@ -89,7 +89,7 @@
                 transform: translateY(-5rem);
                 text-transform: uppercase;
                 font-size: 22rem;
-                color: ${brandingColors.dark};
+                color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                 line-height: 28rem;
             }
     }
@@ -108,7 +108,7 @@
         font-weight: normal;
         font-style: normal;
         font-size: 1rem;
-        color: ${brandingColors.dark};
+        color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
         letter-spacing: 0.01em;
         text-align: right;
         line-height: 1.5rem;
@@ -139,7 +139,7 @@
                 font-family: "MAZIUS REVIEW 20.09";
                 text-transform: uppercase;
                 font-size: 24vw;
-                color: ${brandingColors.dark};
+                color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                 letter-spacing: 0;
                 line-height: 24vw;
             }
@@ -158,7 +158,7 @@
                 transform: translateY(-2vw);
                 text-transform: uppercase;
                 font-size: 24vw;
-                color: ${brandingColors.dark};
+                color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                 line-height: 24vw;
             }
     }

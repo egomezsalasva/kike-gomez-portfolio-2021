@@ -33,7 +33,7 @@
                 font-family: "Graphik";
                 font-weight: 500;
                 font-size: 5rem;
-                color: ${brandingColors.dark};
+                color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                 letter-spacing: 0;
                 text-transform: uppercase;
                 margin: 0;
@@ -41,9 +41,9 @@
         }
 
         .emailContainer{
-        display: flex;
-        align-items: flex-end;
-        transform: translateX(-30px);
+            display: flex;
+            align-items: flex-end;
+            transform: translateX(-30px);
 
             .wrapper{
                 height: auto;
@@ -56,6 +56,7 @@
                     .clip{
                         text-align: right;
                         transform: translateY(0%);
+                        color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
 
                         .imgClip{
                             transform: translateY(2px);
@@ -67,6 +68,7 @@
                     .clipConfirmed{
                         text-align: right;
                         transform: translateY(0%);
+                        color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                     }
                 }
 
@@ -76,7 +78,7 @@
                     font-weight: normal;
                     font-style: normal;
                     font-size: 5rem;
-                    color: ${brandingColors.dark};
+                    color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                     letter-spacing: 0;
                     line-height: 112px;
                     span{
@@ -115,7 +117,7 @@
                 font-family: "Graphik";
                 font-weight: 500;
                 font-size: 2rem;
-                color: ${brandingColors.dark};
+                color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                 letter-spacing: 0;
                 text-transform: uppercase;
                 margin: 0;
@@ -141,6 +143,7 @@
                         transform: translateY(-1px);
                         font-size: 0.75rem;
                         line-height: 1;
+                        color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
 
                         .imgClip{
                             height: 15px;
@@ -154,6 +157,7 @@
                         transform: translateY(-1px);
                         font-size: 0.75rem;
                         line-height: 1;
+                        color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                     }
                 }
 
@@ -163,7 +167,7 @@
                     font-weight: normal;
                     font-style: normal;
                     font-size: 1.5rem;
-                    color: ${brandingColors.dark};
+                    color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
                     letter-spacing: 0;
                     line-height: 1;
 
@@ -184,8 +188,11 @@
 
         //TODO:REFACTOR RENDER IMAGE POROPERLY
 
-        //COPY TO CLIPBOARD
+        //TODO COLOR TOGGLE COPY CLIPBOARD ICON
 
+        //COPY TO CLIPBOARD ANIMATION
+
+            //-DESKTOP
             const clipTl = gsap.timeline({paused: true})
             let clipRef = useRef()
             let clipConfirmRef = useRef()
@@ -196,6 +203,7 @@
                     .to(clipConfirmRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
             }, [clipTl])
 
+            //-MOBILE
             const clipMobileTl = gsap.timeline({paused: true})
             let clipMobileRef = useRef()
             let clipConfirmMobileRef = useRef()
@@ -205,11 +213,13 @@
                     .to(clipMobileRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
                     .to(clipConfirmMobileRef, {duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
             }, [clipMobileTl])
+            
+        //
 
+        //COPY TO CLIPBOARD
             const copyToClipboard = () => {
                 navigator.clipboard.writeText("egomezsalasva@gmail.com")
             }
-
         //
 
         return (

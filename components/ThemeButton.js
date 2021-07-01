@@ -10,7 +10,7 @@
     .themeButtonShadow{
         width: 24px;
         height: 24px;
-        background: ${brandingColors.light};
+        background: ${props => props.theme.mode === "light" ? brandingColors.light : brandingColors.dark };
         border-radius: 50%;
         position: absolute;
         top: 40px;
@@ -25,7 +25,7 @@
     .themeButton{
         width: 24px;
         height: 24px;
-        background: ${brandingColors.dark};
+        background: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
         border-radius: 50%;
         position: absolute;
         top: 40px;
@@ -41,16 +41,12 @@
 //
 
 //MAIN COMPONENT
-  export default function ThemeButton({themeButtonRefProp}) {
-
-      //TODO Theme color
-
+  export default function ThemeButton({themeButtonRefProp, toggleClickProp}) {
       return (
           <StyleContainer>
-              <div className="themeButtonShadow"></div>
-              <div className="themeButton" ref={themeButtonRefProp}></div>
+              <div className="themeButtonShadow" ></div>
+              <div className="themeButton" ref={themeButtonRefProp} onClick={toggleClickProp}></div>
           </StyleContainer>
       )
-
   }
 //

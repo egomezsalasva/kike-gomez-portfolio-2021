@@ -33,7 +33,7 @@
         font-family: "Graphik";
         font-weight: 500;
         font-size: 5rem;
-        color: ${brandingColors.dark};
+        color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
         letter-spacing: 0;
         text-transform: uppercase;
         margin: 0;
@@ -56,7 +56,7 @@
           font-weight: normal;
           font-style: normal;
           font-size: 5rem;
-          color: ${brandingColors.dark};
+          color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
           letter-spacing: 0;
           //line-height: 7rem;
           line-height: 112px;
@@ -88,7 +88,7 @@
           font-weight: normal;
           font-style: normal;
           font-size: 1rem;
-          color: ${brandingColors.dark};
+          color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
           letter-spacing: 0;
           text-align: right;
           line-height: 1;
@@ -121,7 +121,7 @@
         font-family: "Graphik";
         font-weight: 500;
         font-size: 2rem;
-        color: ${brandingColors.dark};
+        color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
         letter-spacing: 0;
         text-transform: uppercase;
         margin: 0;
@@ -148,7 +148,7 @@
           font-weight: normal;
           font-style: normal;
           font-size: 2.5rem;
-          color: ${brandingColors.dark};
+          color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
           letter-spacing: 0;
           line-height: 1;
           height: 40px;
@@ -168,7 +168,7 @@
           font-weight: normal;
           font-style: normal;
           font-size: 0.75rem;
-          color: ${brandingColors.dark};
+          color: ${props => props.theme.mode === "light" ? brandingColors.dark : brandingColors.light };
           letter-spacing: 0;
           text-align: right;
           line-height: 1;

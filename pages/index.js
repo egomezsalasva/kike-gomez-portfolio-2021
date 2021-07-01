@@ -11,10 +11,21 @@
   import Work from '../components/Work'
   import Contact from '../components/Contact'
   //-Styles
-  import {breakingPoints} from '../styles/customStyles'
+  import { createGlobalStyle, ThemeProvider } from 'styled-components'
+  import { breakingPoints } from '../styles/customStyles'
+  import { brandingColors } from '../styles/customStyles'
+  //-Contexts
+  import { useThemeContext } from '../contexts/themeContext'
 //
 
 // STYLES
+
+  const GlobalStyle = createGlobalStyle`
+    body {
+      background: ${props => props.theme.mode === "light" ? brandingColors.light : brandingColors.dark };
+    }
+  ` 
+
   const Container = styled.div`
     width: 1240px;
     margin: 0 auto;
@@ -25,6 +36,7 @@
       min-width: auto;
     }
   `
+
 //
 
 //MAIN COMPONENT
@@ -36,9 +48,12 @@
 
     //TODO ON REFRESH TOP TO THE PAGE
 
-    //TODO TOGGLE COLOR THEME
+    //TODO RESPOSNIVE TABLET
 
     //BUG CHROME BOTTOM BAR PINNING BEHAVIOUR
+
+    //BUG STYLED COMPONENTS INITIAL LOAD
+
 
     //INTRO ANIMATION
 
@@ -97,12 +112,21 @@
       
     //
 
+    //CONTEXT COLOR THEME
+      const {themeMode, toggleThemeHandler} = useThemeContext()
+    //
+
+
     return (
       <>
+      <ThemeProvider theme={{mode: themeMode.mode}}>
+
         <Head>
           <title>Kike Gomez</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
+
+        <GlobalStyle/>
 
         <Preloader
           introTopBlockRefProp={el => {introTopBlockRef = el}}
@@ -116,6 +140,7 @@
           <ThemeButton 
             themeButtonRefProp={el => {themeButtonRef = el}}
             themeButtonMobileRefProp={el => {themeButtonMobileRef = el}}
+            toggleClickProp={() => toggleThemeHandler()}
           />
           
           <TopFold 
@@ -132,6 +157,8 @@
           <Contact />
 
         </Container>
+
+      </ThemeProvider>
       </>
     )
   }
