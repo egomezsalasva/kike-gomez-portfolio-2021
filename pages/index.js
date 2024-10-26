@@ -5,7 +5,7 @@ import { useRef, useEffect } from "react";
 import styled from "styled-components";
 import { gsap } from "gsap";
 //-Components
-import Preloader from "../components/Preloader";
+import Preloader from "../components/preloader/Preloader";
 import ThemeButton from "../components/ThemeButton";
 import TopFold from "../components/TopFold";
 import Work from "../components/work/Work";
