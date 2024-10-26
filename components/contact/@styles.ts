@@ -1,21 +1,11 @@
-// IMPORTS
-//-Modules
-import { useRef, useEffect } from "react";
-//import Image from 'next/image'
-import { gsap } from "gsap";
 import styled from "styled-components";
-//-Styles
 import {
   brandingColors,
   brandingFonts,
   breakingPoints,
-} from "../styles/customStyles";
-//import copyClipImg from '../public/copyClip.svg'
-//
+} from "../../styles/customStyles";
 
-// STYLES
-
-const DesktopContent = styled.div`
+export const DesktopStyle = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -108,7 +98,7 @@ const DesktopContent = styled.div`
   }
 `;
 
-const MobileContent = styled.div`
+export const MobileStyle = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100vw;
@@ -209,141 +199,3 @@ const MobileContent = styled.div`
     }
   }
 `;
-
-//
-
-//MAIN COMPONENT
-const Contact = ({}) => {
-  //TODO:REFACTOR RENDER IMAGE POROPERLY
-
-  //TODO COLOR TOGGLE COPY CLIPBOARD ICON
-
-  //COPY TO CLIPBOARD ANIMATION
-
-  //-DESKTOP
-  const clipTl = gsap.timeline({ paused: true });
-  let clipRef: any = useRef();
-  let clipConfirmRef: any = useRef();
-
-  useEffect(() => {
-    clipTl
-      .to(clipRef, { duration: 0.5, yPercent: -100, ease: "power2.inOut" }, "a")
-      .to(
-        clipConfirmRef,
-        { duration: 0.5, yPercent: -100, ease: "power2.inOut" },
-        "a",
-      );
-  }, [clipTl]);
-
-  //-MOBILE
-  const clipMobileTl = gsap.timeline({ paused: true });
-  let clipMobileRef: any = useRef();
-  let clipConfirmMobileRef: any = useRef();
-
-  useEffect(() => {
-    clipMobileTl
-      .to(
-        clipMobileRef,
-        { duration: 0.5, yPercent: -100, ease: "power2.inOut" },
-        "a",
-      )
-      .to(
-        clipConfirmMobileRef,
-        { duration: 0.5, yPercent: -100, ease: "power2.inOut" },
-        "a",
-      );
-  }, [clipMobileTl]);
-
-  //
-
-  //COPY TO CLIPBOARD
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText("egomezsalasva@gmail.com");
-  };
-  //
-
-  return (
-    <>
-      <DesktopContent>
-        <div className="title">
-          <h2>Contact</h2>
-        </div>
-
-        <div className="emailContainer">
-          <div
-            className="wrapper"
-            onClick={() => {
-              clipTl.play();
-              copyToClipboard();
-            }}
-          >
-            <div className="clipWrapper">
-              <div
-                className="clip"
-                ref={(el) => {
-                  clipRef = el;
-                }}
-              >
-                Copy To Clipboard
-                {/* <Image className="imgClip" src={copyClipImg} height={15} width={13} alt="copy clipboard" />  */}
-              </div>
-              <div
-                className="clipConfirmed"
-                ref={(el) => {
-                  clipConfirmRef = el;
-                }}
-              >
-                Copied To Clipboard!
-              </div>
-            </div>
-            <div className="email">
-              egomezsalasva<span>@</span>gmail.com
-            </div>
-          </div>
-        </div>
-      </DesktopContent>
-
-      <MobileContent>
-        <div className="title">
-          <h2>Contact</h2>
-        </div>
-
-        <div className="emailContainer">
-          <div
-            className="wrapper"
-            onClick={() => {
-              clipMobileTl.play();
-              copyToClipboard();
-            }}
-          >
-            <div className="clipWrapper">
-              <div
-                className="clip"
-                ref={(el) => {
-                  clipMobileRef = el;
-                }}
-              >
-                Copy To Clipboard
-                {/* <Image className="imgClip" src={copyClipImg} height={15} width={13} alt="copy clipboard"/> */}
-              </div>
-              <div
-                className="clipConfirmed"
-                ref={(el) => {
-                  clipConfirmMobileRef = el;
-                }}
-              >
-                Copied To Clipboard!
-              </div>
-            </div>
-            <div className="email">
-              egomezsalasva<span>@</span>gmail.com
-            </div>
-          </div>
-        </div>
-      </MobileContent>
-    </>
-  );
-};
-//
-
-export default Contact;
