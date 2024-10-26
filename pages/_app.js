@@ -1,6 +1,5 @@
-import '../styles/globals.css'
-import { ThemeContextProvider } from '../contexts/themeContext'
-
+import "../styles/globals.css";
+import { ThemeContextProvider } from "../contexts/themeContext";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,8 +8,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeContextProvider>
     </>
-  )
+  );
 }
 
-
-export default MyApp
+export default MyApp;
