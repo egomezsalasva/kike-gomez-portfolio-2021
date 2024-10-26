@@ -8,7 +8,7 @@ import { gsap } from "gsap";
 import Preloader from "../components/Preloader";
 import ThemeButton from "../components/ThemeButton";
 import TopFold from "../components/TopFold";
-import Work from "../components/Work";
+import Work from "../components/work/Work";
 import Contact from "../components/Contact";
 //-Styles
 import { createGlobalStyle, ThemeProvider } from "styled-components";
