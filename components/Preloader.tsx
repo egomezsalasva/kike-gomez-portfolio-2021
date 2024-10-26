@@ -1,6 +1,6 @@
 // IMPORTS
     //-Modules
-    import { useRef, useEffect } from 'react'
+    import { useRef, useEffect, FunctionComponent } from 'react'
     import styled from 'styled-components'
     import { gsap } from 'gsap'
     import {TextPlugin} from 'gsap/dist/TextPlugin'
@@ -86,7 +86,7 @@
 //
 
 //MAIN COMPONENT
-    export default function Preloader({introTopBlockRefProp, introTopLoadingBarRefProp, introBottomBlockRefProp, introBottomLoadingBarRefProp }) {
+const Preloader: FunctionComponent<any> = ({introTopBlockRefProp, introTopLoadingBarRefProp, introBottomBlockRefProp, introBottomLoadingBarRefProp }) => {
 
 
         //INTRO ANIMATION PERCENTAGE
@@ -96,8 +96,8 @@
             //
 
             //Preloader Percentage Refs
-                let introTopNumberRef = useRef(null)
-                let introBottomNumberRef =useRef(null)
+                let introTopNumberRef: any = useRef(null)
+                let introBottomNumberRef: any =useRef(null)
             //
 
             useEffect( () => {
@@ -224,3 +224,5 @@
         )
     }
 //
+
+export default Preloader

@@ -3,6 +3,7 @@
   import styled from 'styled-components'
   //-Styles
   import { brandingColors, breakingPoints } from '../styles/customStyles'
+import { FunctionComponent } from 'react'
 //
 
 // STYLES
@@ -41,7 +42,7 @@
 //
 
 //MAIN COMPONENT
-  export default function ThemeButton({themeButtonRefProp, toggleClickProp}) {
+const ThemeButton: FunctionComponent<any> = ({themeButtonRefProp, toggleClickProp}) => {
       return (
           <StyleContainer>
               <div className="themeButtonShadow" ></div>
@@ -50,3 +51,5 @@
       )
   }
 //
+
+export default ThemeButton

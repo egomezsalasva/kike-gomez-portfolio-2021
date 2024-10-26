@@ -3,6 +3,7 @@
   import styled from 'styled-components'
   //-Styles
   import { brandingColors, brandingFonts, breakingPoints } from '../styles/customStyles'
+import { FunctionComponent } from 'react'
 //
 
 // STYLES
@@ -168,7 +169,7 @@
 //
 
 //MAIN COMPONENT
-    export default function TopFold({nameRefProp, descriptionRefProp, surnameRefProp, nameMobileRefProp, descriptionMobileRefProp, surnameMobileRefProp}) {
+const TopFold: FunctionComponent<any> = ({nameRefProp, descriptionRefProp, surnameRefProp, nameMobileRefProp, descriptionMobileRefProp, surnameMobileRefProp}) => {
     
     return (
         <StyleContainer>        
@@ -219,3 +220,4 @@
     )
     }
 //
+export default TopFold

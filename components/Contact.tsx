@@ -186,7 +186,7 @@
 //
 
 //MAIN COMPONENT
-    export default function Contact({}) {
+const Contact = ({}) => {
 
         //TODO:REFACTOR RENDER IMAGE POROPERLY
 
@@ -196,8 +196,8 @@
 
             //-DESKTOP
             const clipTl = gsap.timeline({paused: true})
-            let clipRef = useRef()
-            let clipConfirmRef = useRef()
+            let clipRef: any = useRef()
+            let clipConfirmRef: any = useRef()
             
             useEffect(() => {
                 clipTl
@@ -207,8 +207,8 @@
 
             //-MOBILE
             const clipMobileTl = gsap.timeline({paused: true})
-            let clipMobileRef = useRef()
-            let clipConfirmMobileRef = useRef()
+            let clipMobileRef:any = useRef()
+            let clipConfirmMobileRef: any = useRef()
             
             useEffect(() => {
                 clipMobileTl
@@ -236,10 +236,10 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipRef = el}>Copy To Clipboard 
+                                <div className="clip" ref={el => {clipRef = el}}>Copy To Clipboard 
                                     {/* <Image className="imgClip" src={copyClipImg} height={15} width={13} alt="copy clipboard" />  */}
                                 </div>
-                                <div className="clipConfirmed" ref={el => clipConfirmRef = el}>Copied To Clipboard!</div>
+                                <div className="clipConfirmed" ref={el => {clipConfirmRef = el}}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
                         </div>
@@ -257,10 +257,10 @@
                     <div className="emailContainer">
                         <div className="wrapper" onClick={() => { clipMobileTl.play(); copyToClipboard()} }>
                             <div className="clipWrapper">
-                                <div className="clip" ref={el => clipMobileRef = el}>Copy To Clipboard 
+                                <div className="clip" ref={el => {clipMobileRef = el}}>Copy To Clipboard 
                                     {/* <Image className="imgClip" src={copyClipImg} height={15} width={13} alt="copy clipboard"/> */}
                                 </div>    
-                                <div className="clipConfirmed" ref={el => clipConfirmMobileRef = el}>Copied To Clipboard!</div>
+                                <div className="clipConfirmed" ref={el => {clipConfirmMobileRef = el}}>Copied To Clipboard!</div>
                             </div>
                             <div className="email">egomezsalasva<span>@</span>gmail.com</div>
                         </div>
@@ -273,3 +273,5 @@
 
     }
 //
+
+export default Contact

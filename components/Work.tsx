@@ -183,7 +183,7 @@
 
 
 //MAIN COMPONENT
-    export default function Work() {
+const Work = () => {
 
         //BUG ANIMATION JUMPY WITH CHROME BAR
 
@@ -200,7 +200,7 @@
             }
 
             //Sroll Desktop
-              let workTitleRef = useRef()
+              let workTitleRef: any = useRef()
 
               useEffect(() => {
                   ScrollTrigger.create({
@@ -214,7 +214,7 @@
             //
 
             //Sroll Mobile
-              let workTitleMobileRef = useRef()
+              let workTitleMobileRef: any = useRef()
 
               useEffect(() => {
                   ScrollTrigger.create({
@@ -342,3 +342,5 @@
 
     }
 //
+
+export default Work

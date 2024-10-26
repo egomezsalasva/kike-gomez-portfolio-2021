@@ -1,6 +1,4 @@
-// module.exports = {
-//   reactStrictMode: true,
-// }
+// next.config.js
 module.exports = {
-  target: "serverless"
-}
+  // reactStrictMode: true,
+};
