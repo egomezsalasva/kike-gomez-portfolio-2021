@@ -14,8 +14,10 @@ export const DesktopStyle = styled.div`
   }
 
   .title {
-    height: 290px;
-
+    --height: 290px;
+    position: sticky;
+    top: calc(100vh - var(--height));
+    height: var(--height);
     h2 {
       position: relative;
       top: 20px;
@@ -37,6 +39,7 @@ export const DesktopStyle = styled.div`
   }
 
   .workListContainer {
+    width: 100%;
     .workProject {
       text-align: right;
       margin-top: 16px;
@@ -75,7 +78,7 @@ export const DesktopStyle = styled.div`
           margin-right: 32px;
           transform: translateY(16px);
           //background: url("https://media.giphy.com/media/z193jwEWnkHEk/source.gif");
-          background: url("./kikzEyePreview.gif");
+          background: url("/kikzEyePreview.gif");
           background-size: cover;
         }
       }
@@ -92,6 +95,28 @@ export const DesktopStyle = styled.div`
         letter-spacing: 0;
         text-align: right;
         line-height: 1;
+        .readMoreBtn {
+          font-weight: bold;
+          margin-top: 6px;
+          cursor: pointer;
+        }
+      }
+      .infoBlock {
+        height: 0;
+        display: none;
+        text-align: left;
+        margin: 24px 0 48px 0;
+        .techStackTab {
+          display: inline-block;
+          padding: 8px 10px;
+          border: 1px solid rgba(242, 236, 232, 0.5);
+          box-shadow:
+            -5px -5px 10px #fffcfa,
+            5px 5px 10px #f2f2ed;
+          border-radius: 5px;
+          margin-right: 14px;
+          margin-bottom: 14px;
+        }
       }
     }
   }
@@ -107,9 +132,7 @@ export const MobileStyle = styled.div`
   }
 
   .title {
-    //height: 290px;
     margin-left: 24px;
-
     h2 {
       position: relative;
       top: 8px;

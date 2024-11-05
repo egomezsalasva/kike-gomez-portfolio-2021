@@ -1,16 +1,41 @@
+import { MutableRefObject } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { calculateAnimDurationBasedOnHeight } from "./@utils";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
+export const blockInfoAnim = (
+  ref: MutableRefObject<HTMLElement>,
+  readMoreActive: boolean,
+) => {
+  if (!ref.current) return;
 
-export const titleAnimation = (animRef: string, endAnchor: string) => {
-  ScrollTrigger.create({
-    pin: animRef,
-    trigger: animRef,
-    endTrigger: endAnchor,
-    start: "bottom bottom-=40px",
-    end: "bottom bottom-=40px",
-  });
+  if (readMoreActive) {
+    // First set: Get the natural height
+    gsap.set(ref.current, {
+      height: "auto",
+      visibility: "hidden",
+      display: "block",
+    });
+    const height = ref.current.offsetHeight;
+    // Second set: Prepare for animation
+    gsap.set(ref.current, {
+      height: 0,
+      visibility: "visible",
+      overflow: "hidden",
+    });
+    gsap.to(ref.current, {
+      height: height,
+      duration: calculateAnimDurationBasedOnHeight(height, true),
+      ease: "power2.out",
+    });
+  } else {
+    const height = ref.current.offsetHeight;
+    gsap.to(ref.current, {
+      height: 0,
+      duration: calculateAnimDurationBasedOnHeight(height, false),
+      ease: "power2.in",
+      onComplete: () => {
+        gsap.set(ref.current, { display: "none" });
+      },
+    });
+  }
 };

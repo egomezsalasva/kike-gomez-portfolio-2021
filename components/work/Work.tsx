@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import ProjectList from "./ProjectList";
 import ProjectTitle from "./ProjectTitle";
-import { titleAnimation } from "./@animations";
+// import { titleAnimation } from "./@animations";
 import { DesktopStyle, MobileStyle } from "./@styles";
 
 const Work = () => {
@@ -15,30 +15,24 @@ const Work = () => {
 
   //SCROLL FOLLOW
 
-  let workTitleRef: any = useRef();
-  let workTitleMobileRef: any = useRef();
+  // let workTitleMobileRef: any = useRef();
 
-  useEffect(() => {
-    titleAnimation(workTitleRef, "#workList");
-    titleAnimation(workTitleMobileRef, "#workListMobile");
-  }, []);
+  // useEffect(() => {
+  //   titleAnimation(workTitleMobileRef, "#workListMobile");
+  // }, []);
 
   return (
     <>
       <DesktopStyle>
-        <ProjectTitle
-          titleRef={(el: any) => {
-            workTitleRef = el;
-          }}
-        />
-        <ProjectList listId="workList" />
+        <ProjectTitle />
+        <ProjectList listId="workList" isDesktop />
       </DesktopStyle>
 
       <MobileStyle>
         <ProjectTitle
-          titleRef={(el: any) => {
-            workTitleMobileRef = el;
-          }}
+        // titleRef={(el: any) => {
+        //   workTitleMobileRef = el;
+        // }}
         />
         <ProjectList listId="workListMobile" />
       </MobileStyle>
