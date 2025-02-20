@@ -16,7 +16,7 @@ export const DesktopStyle = styled.div`
   .title {
     --height: 290px;
     position: sticky;
-    top: calc(100vh - var(--height));
+    top: calc(100vh - var(--height) - 10px);
     height: var(--height);
     h2 {
       position: relative;
@@ -133,6 +133,10 @@ export const MobileStyle = styled.div`
 
   .title {
     margin-left: 24px;
+    --height: 98px;
+    position: sticky;
+    top: calc(100vh - var(--height) - 20px);
+    height: var(--height);
     h2 {
       position: relative;
       top: 8px;

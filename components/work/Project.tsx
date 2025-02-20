@@ -40,12 +40,14 @@ const Project: FunctionComponent<Props> = ({
       </a>
       <div className="workProjectText">
         {role}{" "}
-        <div
-          className="readMoreBtn"
-          onClick={() => setReadMoreActive(!readMoreActive)}
-        >
-          + Read More
-        </div>
+        {isDesktop && (
+          <div
+            className="readMoreBtn"
+            onClick={() => setReadMoreActive(!readMoreActive)}
+          >
+            + Read More
+          </div>
+        )}
       </div>
       {isDesktop && techStack && description && (
         <div className="infoBlock" ref={infoBlockRef}>

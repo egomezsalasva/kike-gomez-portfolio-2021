@@ -116,12 +116,12 @@ const ProjectList: FunctionComponent<Props> = ({ listId, isDesktop }) => {
               designs.
             </p>
             <p>
-              The main thing I've been working on is the website and the docs
-              for 21 Analytics. For the site we have gone a long way from moving
-              from a previous squarespace site which was very limited and not
-              very good for SEO, to migrating to a static Next.js site. This was
-              done with a fully custom design following a branding style guide I
-              created.
+              The main thing I&apos;ve been working on is the website and the
+              docs for 21 Analytics. For the site we have gone a long way from
+              moving from a previous squarespace site which was very limited and
+              not very good for SEO, to migrating to a static Next.js site. This
+              was done with a fully custom design following a branding style
+              guide I created.
             </p>
             <p>
               Using Next.js provided us with lots of flexibility and the
@@ -136,10 +136,11 @@ const ProjectList: FunctionComponent<Props> = ({ listId, isDesktop }) => {
               for the sales team.
             </p>
             <p>
-              For analytics we started with Plausible since it didn't use any
-              cookies and kept in line with the company's privacy values. But
-              later the marketing team moved to Google Analytics to have more
-              detailed data. This also came with a bit of a timing trade-off.
+              For analytics we started with Plausible since it didn&apos;t use
+              any cookies and kept in line with the company&apos;s privacy
+              values. But later the marketing team moved to Google Analytics to
+              have more detailed data. This also came with a bit of a timing
+              trade-off.
             </p>
             <p>
               I temporarily added a chatbot with Mendable AI. This fetched data
@@ -169,13 +170,13 @@ const ProjectList: FunctionComponent<Props> = ({ listId, isDesktop }) => {
               automate message signatures to prove ownership of their wallets.
             </p>
             <p>
-              I've taken a key role in contributing to the marketing team by
-              suggesting features that have done some of the best results when
-              it comes to user engagement, such as the chatbot and a Digital
-              Asset finder tool. I've also worked hand in hand with the
-              copywriters to make the CMS experience as smooth as possible as
-              well as keeping best practices in mind for SEO, with the teams SEO
-              experts.
+              I&apos;ve taken a key role in contributing to the marketing team
+              by suggesting features that have done some of the best results
+              when it comes to user engagement, such as the chatbot and a
+              Digital Asset finder tool. I&apos;ve also worked hand in hand with
+              the copywriters to make the CMS experience as smooth as possible
+              as well as keeping best practices in mind for SEO, with the teams
+              SEO experts.
             </p>
             <p>
               For the main product we briefly touched Docker, Docker-compose and
@@ -187,7 +188,7 @@ const ProjectList: FunctionComponent<Props> = ({ listId, isDesktop }) => {
         }
       />
       <Project
-        linkUrl="https://anuarkhalifi.com/"
+        linkUrl="https://anuar-khalifi.netlify.app/"
         title="Anuar Khalifi"
         role="Development & Design"
         isDesktop={isDesktop}
@@ -195,7 +196,7 @@ const ProjectList: FunctionComponent<Props> = ({ listId, isDesktop }) => {
         description={
           <>
             <p>
-              For Anuar Khalifi's website we wanted to keep a design that
+              For Anuar Khalifi&apos;s website we wanted to keep a design that
               resembled a gallery to keep the focus on the paintings.
             </p>
             <p>
@@ -223,10 +224,10 @@ const ProjectList: FunctionComponent<Props> = ({ listId, isDesktop }) => {
         description={
           <>
             <p>
-              Scranny's House is a personal project I made to practice working
-              with e-commerce using Stripe. The website is as a store of english
-              munchies that was sold here in Spain. The project was later
-              suspended due to import costs rising largely.
+              Scranny&apos;s House is a personal project I made to practice
+              working with e-commerce using Stripe. The website is as a store of
+              english munchies that was sold here in Spain. The project was
+              later suspended due to import costs rising largely.
             </p>
             <p>
               For this project I worked with Stripe Checkout. It stores the data
@@ -259,7 +260,7 @@ const ProjectList: FunctionComponent<Props> = ({ listId, isDesktop }) => {
               Ajuar is a design and content creation studio. Since they offer
               design services it made sense that they did the design for this
               project and I did exclusively the development. Working hand in
-              hand with Ajuar's design team we did the site following their
+              hand with Ajuar&apos;s design team we did the site following their
               requests.
             </p>
             <p>

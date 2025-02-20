@@ -112,7 +112,6 @@ export const MobileStyle = styled.div`
   .title {
     width: 35px;
     margin-left: 24px;
-
     h2 {
       position: relative;
       //top: 8px;
@@ -144,7 +143,7 @@ export const MobileStyle = styled.div`
 
       .clipWrapper {
         overflow: hidden;
-        height: 17px;
+        height: 11px;
         margin-bottom: 8px;
 
         .clip {
