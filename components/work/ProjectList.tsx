@@ -209,7 +209,7 @@ const ProjectList: FunctionComponent<Props> = ({ listId, isDesktop }) => {
         }
       />
       <Project
-        linkUrl="https://scrannyshouse.com/"
+        linkUrl="https://scrannyshouse.netlify.app/"
         title="Scranny's House"
         role="Development & Design"
         isDesktop={isDesktop}
@@ -243,7 +243,7 @@ const ProjectList: FunctionComponent<Props> = ({ listId, isDesktop }) => {
         }
       />
       <Project
-        linkUrl="https://www.ajuarestudio.com"
+        linkUrl="https://ajuar.netlify.app/"
         title="Ajuar"
         role="Development"
         isDesktop={isDesktop}
